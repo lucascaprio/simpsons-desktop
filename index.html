@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="common/img/icone.ico"  type="image/x-icon"/>
+<title>Os Simpsons</title>
+<script src="common/lib/jquery.js" type="text/javascript"></script>
+<script src="common/lib/entrada.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+if(screen.width <= 669)
+{
+	window.close();
+}
+
+</script>
+
+<style type="text/css">
+
+body { background:url(common/img/backgrounds/bg_body_0.jpg) no-repeat center center fixed; 
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;}
+	
+#rosquinha { width:315px; height:301px; position:fixed; top:50%; left:50%; margin-top:-150px; margin-left:-157px; z-index:2;} 
+#rosquinha2 { width:315px; height:301px; position:fixed; top:50%; left:50%; margin-top:-150px; margin-left:-157px; z-index:1;} 
+
+p { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:24px; color:#FFF; position:absolute; bottom:0;}
+
+#ini {float:left;}
+#pont { left:270px;}
+</style>
+</head>
+
+<body>
+
+	<div id="rosquinha"></div>
+    <div id="rosquinha2"></div>
+    <p id="ini">Inicializando o Simpsons</p><p id="pont"></p>
+    
+    <bgsound src="common/Simpsons.mp3" hidden="true" volume="60">
+    <embed id="video" src="common/Simpsons.mp3" WIDTH="140" HEIGHT="50" AUTOSTART="TRUE" CONTROLS="SMALLCONSOLE" volume="60" OOP="FALSE" "></embed>
+</body>
+</html>

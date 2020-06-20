@@ -1,0 +1,165 @@
+body,html { margin:0; padding:0; }
+body { background:url(../img/backgrounds/bg_body_1.jpg) no-repeat center center fixed; width:100%; height:100%; position:fixed; overflow:hidden;
+-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; }
+
+#main {background:url(../img/backgrounds/bg_body_1.jpg) no-repeat center center fixed; width:100%; height:95%; position:absolute; overflow:hidden; z-index:1;   
+-webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; }
+	
+img { border:0; }
+
+/* Icones da Area de Trabalho, Barra Inferior */
+
+/*#iconHis { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+#iconPre { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+#iconPer { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+#iconMus { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+#iconFot { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+
+#iconHis:hover { background:url(../img/bg_hover_3.png) repeat; }
+#iconPre:hover { background:url(../img/bg_hover_3.png) repeat; }
+#iconPer:hover { background:url(../img/bg_hover_3.png) repeat; }
+#iconMus:hover { background:url(../img/bg_hover_3.png) repeat; }
+#iconFot:hover { background:url(../img/bg_hover_3.png) repeat; }*/
+
+.icons { position:absolute; width:80px; height:90px; text-align:center; cursor:pointer; z-index:2; }
+.icons:hover { background:url(../img/bg_hover_3.png) repeat; }
+
+p { margin:0; color:#FFF; }
+
+#barra { background:url(../img/bg_barra.png) repeat-x; position:fixed; width:100%; height:50px; bottom:0; z-index:999999999; } 
+#rosca:hover { bottom:5px; cursor:pointer; }
+
+/* Menu */
+
+#menu { background-color:#b8c9f5; position:fixed; width:398px; height:300px; bottom:50px; z-index:2; display:none; }
+
+#area1 { background-color:#FFF; width:200px; height:280px; float:left; margin:10px; } 
+#area2 { width:160px; height:280px; float:left; margin-top:10px; color:#666; }
+
+#menutable { width:160px; margin:5px 0 0 10px; color:#000;}
+#menutable2 { width:160px; margin-top:5px;}
+
+#area1 td:hover { cursor:pointer; background:url(../img/bg_hover_1.png) repeat; }
+#area2 td:hover { cursor:pointer; background:url(../img/bg_hover_2.png) repeat; }
+
+#menu #area1 p { color:#000; float:left; margin:10px 0 0 20px; }
+#menu #area2 p { color:#666; float:left; margin:10px 0 0 10px; }
+
+#reiniciar { width:160px; height:45px; cursor:pointer; }
+#reiniciar:hover { background:url(../img/bg_hover_2.png) repeat; }
+
+.imgPeq { height:40px; width:45px; float:left;}
+table tr td { padding-top:10px; }
+
+/* Indentificação do Usuário */
+
+#indentificacao { background-color:#b8c9f5; height:260px; width:170px; position:fixed; right:0; text-align:center; z-index:5; }
+#indentificacao p { font-family:'Trebuchet MS', Arial, Helvetica, sans-serif; font-size:16px; color:#000; margin-top:235px;}
+.foto { margin:10px; margin-bottom:5px; width:150px; height:220px; position:absolute; background:url(../img/usuarios/homer.jpg); z-index:4; }
+.foto2 { margin:10px; margin-bottom:5px; width:150px; height:220px; position:absolute; background:url(../img/usuarios/homer.jpg); z-index:3;}
+
+/* Janelas */
+h1 { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:24px; font-weight:300; color:#FFF; margin:10px; }
+h2 { font-family:Verdana, Geneva, sans-serif; font-size:24px; font-weight:100; color:#000; position:absolute; top:20px; left:210px; margin:0; border-bottom:1px solid #000; width:450px; }
+.janDentro { background-color:#FFF; width:680px; height:365px; position:absolute; margin-left:10px; overflow:auto; border:1px solid #000; }
+.janDentro p { font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#000; margin-top:5px; }
+.janDentro a { font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#003; position:absolute; bottom:15px; right:20px; text-decoration:none; font-weight:500; }
+.janDentro a:hover { text-decoration:underline; }
+
+.bordasAzuis { background-color:#b8c9f5; height:240px; width:170px; text-align:center; position:absolute; left:20px; top:20px; }
+
+.imgInternas { margin:10px; margin-bottom:5px; width:150px; height:220px; }
+
+/* Janela de Configurações */
+#janConfiguracoes { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xConfiguracoes { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+.backs { width:145px; height:95px; cursor:pointer; float:left; margin-top:20px; margin-left:20px; }
+.bg_img:hover { border:4px solid #b8c9f5; width:137px; height:87px; }
+
+/* Janela de Usuários */
+#janUsuarios { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; z-index:7; border:1px solid #000; }
+#xUsuarios { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+.users { width:90px; height:100px; text-align:center; cursor:pointer; float:left; margin-top:20px; margin-left:20px; }
+.users p { margin:0; color:#666; }
+.users:hover { background:url(../img/bg_hover_3.png) repeat; }
+
+/* Janela de Perfil */
+#janPerfil { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xPerfil { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+#txtInd { width:450px; position:absolute; top:60px; left:210px; }
+
+/* Janela de História */
+#janHistoria { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xHistoria { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+#txtHis { width:450px; position:absolute; top:60px; left:210px; }
+
+/* Janela de Músicas */
+#janMusicas { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xMusicas { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+.musics { width:90px; height:100px; text-align:center; cursor:pointer; float:left; margin-top:20px; margin-left:20px; }
+.musics p { margin:0; color:#666; font-size:12px; }
+.musics:hover { background:url(../img/bg_hover_3.png) repeat; }
+
+#player { background-color:#b8c9f5; width:330px; height:65px; position:absolute; bottom:60px; right:10px; z-index:7; border:1px solid #000; display:none;}
+#playerArrastar { background-color:#b8c9f5; width:320px; height:65px; position:absolute; z-index:7; }
+#playerDentro { background-color:#FFF; width:312px; height:42px; position:absolute; top:50%; left:50%; margin-top:-21px; margin-left:-156px; z-index:8; border:1px solid #000;}
+
+#xPlayer { position:absolute; right:-8px; top:-8px; cursor:pointer; z-index:9;}
+
+#audio { height:30px; width:300px; position:absolute; top:50%; left:50%; margin-top:-15px; margin-left:-150px; }
+
+/* Janela de Prêmios */
+#janPremios { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xPremios { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+#txtPre { width:450px; height:300px; position:absolute; top:20px; left:210px; margin:0; padding:0; overflow:auto;}
+
+
+.clickPre { font-family:Verdana, Geneva, sans-serif; font-size:13px; font-weight:bold; color:#036; padding-left:20px; margin:0; margin-top:5px; cursor:pointer; }
+.clickPre:hover { text-decoration:underline; }
+
+#clickPre1 { background:url(../img/bg_seta_1.png) no-repeat left; width:185px; color:#036; }
+#clickPre2 { background:url(../img/bg_seta_1.png) no-repeat left; width:100px; color:#036; }
+#clickPre3 { background:url(../img/bg_seta_1.png) no-repeat left; width:170px; color:#036; }
+#clickPre4 { background:url(../img/bg_seta_1.png) no-repeat left; width:145px; color:#036; }
+#clickPre5 { background:url(../img/bg_seta_1.png) no-repeat left; width:110px; color:#036; }
+#clickPre6 { background:url(../img/bg_seta_1.png) no-repeat left; width:215px; color:#036; }
+
+.mostraPre { font-family:Verdana, Geneva, sans-serif; font-size:12px; color:#000; margin:0; padding:0;}
+
+#mostraPre1 { margin:0; margin-bottom:10px; display:none; }
+#mostraPre2 { margin:0; margin-bottom:10px; display:none; }
+#mostraPre3 { margin:0; margin-bottom:10px; display:none; }
+#mostraPre4 { margin:0; margin-bottom:10px; display:none; }
+#mostraPre5 { margin:0; margin-bottom:10px; display:none; }
+#mostraPre6 { margin:0; margin-bottom:10px; display:none; }
+
+/* Janela de Fotos */
+#janFotos { background-color:#b8c9f5; width:700px; height:425px; position:absolute; top:50%; left:50%; margin-top:-213px; margin-left:-350px; display:none; 
+z-index:7; border:1px solid #000; }
+#xFotos { position:absolute; right:-4px; top:-4px; cursor:pointer; }
+
+.fotos { width:90px; height:100px; text-align:center; cursor:pointer; float:left; margin-top:20px; margin-left:20px; }
+.fotos p { margin:0; color:#666; font-size:12px; }
+.fotos:hover { background:url(../img/bg_hover_3.png) repeat; }
+
+
+#ampliarFotos { background-color:#b8c9f5; width:700px; height:380px; position:absolute; top:50px; left:100px; z-index:7; border:1px solid #000; padding-top:12px; display:none; }
+#xAmpliarFotos { position:absolute; right:-8px; top:-8px; cursor:pointer; }
+
+#ampliarFotosDentro { background-color:#FFF; width:680px; height:365px; position:absolute; margin-left:10px; overflow:auto; border:1px solid #000; text-align:center; }
+
+#descricaoFotos { font-family:Verdana, Geneva, sans-serif; font-size:18px; font-weight:300; margin-top:5px; color:#666;}
+
+#seta1 { width:300px; height:365px; position:absolute; top:0; right:0; cursor:pointer; } 
+#seta2 { width:300px; height:365px; position:absolute; top:0; left:0; cursor:pointer; } 

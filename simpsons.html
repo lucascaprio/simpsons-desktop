@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="common/img/icone.ico"  type="image/x-icon"/>
+<title>Os Simpsons</title>
+<link href="common/css/style.css" type="text/css" rel="stylesheet" />
+<script src="common/lib/jquery.js" type="text/javascript"></script>
+<script src="common/lib/jquery.corner.js" type="text/javascript"></script>
+<script src="common/lib/jquery.ui.core.js" type="text/javascript"></script> 
+<script src="common/lib/jquery.ui.widget.js" type="text/javascript"></script> 
+<script src="common/lib/jquery.ui.mouse.js" type="text/javascript"></script> 
+<script src="common/lib/jquery.ui.draggable.js" type="text/javascript"></script>
+ 
+<script src="common/lib/script.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+if(screen.width <= 669)
+{
+	window.close();
+}
+
+</script>
+</head>
+
+<body>
+	<div id="main"></div>      
+
+<!-- Icones da Area de Trabalho -->
+	<div id="iconHis" class="icons"><img src="common/img/historia.png" alt="História" style="height:60px; width:60px;"/><p>História</p></div>
+    <div id="iconPre" class="icons"><img src="common/img/premios.png" alt="Prêmios" style="height:60px; width:60px;"/><p>Prêmios</p></div>
+    <div id="iconPer" class="icons"><img src="common/img/perfil.png" alt="Perfil" style="height:60px; width:60px;"/><p>Perfil</p></div>
+    <div id="iconMus" class="icons"><img src="common/img/musicas.png" alt="Músicas" style="height:60px; width:60px;"/><p>Músicas</p></div>
+    <div id="iconFot" class="icons"><img src="common/img/fotos.png" alt="Fotos" style="height:60px; width:60px;"/><p>Fotos</p></div>
+    
+<!-- Menu --> 
+    <div id="menu">
+    	<div id="area1">
+        	<table id="menutable" name="menutable">
+            	<tr>
+	             	<td colspan="2" id="historia"><img src="common/img/historia.png" alt="História" class="imgPeq" /><p>História</p></td>
+                </tr>
+                <tr>
+                	<td colspan="2" id="premios"><img src="common/img/premios.png" alt="Prêmios" class="imgPeq" /><p>Prêmios</p></td>
+                </tr>
+                <tr>
+                	<td colspan="2" id="perfil"><img src="common/img/perfil.png" alt="Perfil" class="imgPeq"  /><p>Perfil</p></td>
+                </tr>
+                <tr>
+                	<td colspan="2" id="musicas"><img src="common/img/musicas.png" alt="Músicas" class="imgPeq"  /><p>Músicas</p></td>
+                </tr>
+                <tr>
+                	<td colspan="2" id="fotos"><img src="common/img/fotos.png" alt="Fotos" class="imgPeq"  /><p>Fotos</p></td>
+                </tr>
+            </table>
+        </div>
+        <div id="area2">
+        	<table id="menutable2" name="menutable2">
+            	<tr>
+                	<td colspan="2" id="configuracoes"><img src="common/img/configuracoes.png" alt="Configurações" class="imgPeq" /><p>Configurações</p></td>
+                </tr>
+                <tr>
+                	<td colspan="2" id="usuarios"><img src="common/img/usuarios.png" alt="Usuários" class="imgPeq" /><p>Usuários</p></td>
+                </tr>
+            </table>
+            <div id="reiniciar" style="margin-top:115px;" >
+            	<img src="common/img/reiniciar.png" alt="Reiniciar" class="imgPeq" />
+                <p style="float:left; margin:15px 0 0 10px; color:#666;">Reiniciar</p>
+            </div>
+        </div>
+    </div>
+    
+<!-- Barra Inferior --> 
+    <div id="barra"><img src="common/img/rosca.png" alt="Rosca" id="rosca" style="position:absolute; left:5px; z-index:3;" title="Iniciar"/></div>
+    
+<!-- Indentificação do Usuário -->    
+    <div id="indentificacao">
+    	<div class="foto"></div>
+        <div class="foto2"></div>
+    	<p class="nomeInd">Homer Simpsons</p>
+    </div>
+
+<!-- Janela de Configurações --> 
+    <div id="janConfiguracoes">
+    	<h1>Configurações</h1>
+    	<img src="common/img/x.png" id="xConfiguracoes"/>
+    	<div class="janDentro">
+            <div id="back1" class="backs"><img src="common/img/backgrounds/bg_img_1.jpg" class="bg_img"/></div>
+            <div id="back2" class="backs"><img src="common/img/backgrounds/bg_img_2.jpg" class="bg_img"/></div>
+            <div id="back3" class="backs"><img src="common/img/backgrounds/bg_img_3.jpg" class="bg_img"/></div>
+            <div id="back4" class="backs"><img src="common/img/backgrounds/bg_img_4.jpg" class="bg_img"/></div>
+            <div id="back5" class="backs"><img src="common/img/backgrounds/bg_img_5.jpg" class="bg_img"/></div>
+            <div id="back6" class="backs"><img src="common/img/backgrounds/bg_img_6.jpg" class="bg_img"/></div>
+            <div id="back7" class="backs"><img src="common/img/backgrounds/bg_img_7.jpg" class="bg_img"/></div>
+            <div id="back8" class="backs"><img src="common/img/backgrounds/bg_img_8.jpg" class="bg_img"/></div>
+            <div id="back9" class="backs"><img src="common/img/backgrounds/bg_img_9.jpg" class="bg_img"/></div>
+            <div id="back10" class="backs"><img src="common/img/backgrounds/bg_img_10.jpg" class="bg_img"/></div>
+            <div id="back11" class="backs"><img src="common/img/backgrounds/bg_img_11.jpg" class="bg_img"/></div>
+            <div id="back12" class="backs"><img src="common/img/backgrounds/bg_img_12.jpg" class="bg_img"/></div>
+        </div>
+    </div>
+
+<!-- Janela de Usuários -->
+	<div id="janUsuarios">
+    	<h1>Usuários</h1>
+    	<img src="common/img/x.png" alt="Fechar Janela de Configurações" id="xUsuarios" />
+        <div class="janDentro">
+			<div id="homer" class="users"><img src="common/img/usuarios/homer.png" /><p>Homer</p></div>
+            <div id="marge" class="users"><img src="common/img/usuarios/marge.png" /><p>Marge</p></div>
+            <div id="maggie" class="users"><img src="common/img/usuarios/maggie.png" /><p>Maggie</p></div>
+            <div id="bart" class="users"><img src="common/img/usuarios/bart.png" /><p>Bart</p></div>
+            <div id="lisa" class="users"><img src="common/img/usuarios/lisa.png" /><p>Lisa</p></div>
+            <div id="sideshow" class="users"><img src="common/img/usuarios/sideshowbob.png" /><p>Sideshow</p></div>
+            <div id="jeff" class="users"><img src="common/img/usuarios/jeffalbertson.png" /><p>Jeff</p></div>
+            <div id="burns" class="users"><img src="common/img/usuarios/srburns.png" /><p>Sr. Burns</p></div>
+            <div id="porcoaranha" class="users"><img src="common/img/usuarios/porcoaranha.png" /><p>Porco-Aranha</p></div>
+            <div id="fattony" class="users"><img src="common/img/usuarios/fattony.png" /><p>Fat Tony</p></div>
+            <div id="duffman" class="users"><img src="common/img/usuarios/duffman.png" /><p>Duffman</p></div>
+        </div>
+    </div>
+       
+<!-- Janela de História -->
+	<div id="janHistoria">
+    	<h1>História</h1>
+        <img src="common/img/x.png" alt="Fechar Janela de História" id="xHistoria" />
+        <div class="janDentro">
+        	<div class="bordasAzuis">
+            	<div class="imgInternas" style="background:url(common/img/historia.jpg)"></div>
+            </div>
+        	<h2>Os Simpsons</h2>
+        	<div id="txtHis">
+        		<p>Os Simpsons é uma comédia de situação animada estado-unidense criada por <a href="http://pt.wikipedia.org/wiki/Matt_Groening" target="_new" style="font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#000; position:relative; top:0.5px; left:0.3px; font-weight:bold;">Matt Groening</a> para a Fox Broadcasting Company.</p><p>A série é uma paródia satírica do estilo de vida da classe média dos Estados Unidos, simbolizada pela família de mesmo nome, que consiste de Homer Jay Simpson, Marjorie "Marge" (Bouvier) Simpson, Bartholomew "Bart" Simpson, Elisabeth "Lisa" Marie Simpson e Margareth "Maggie" Simpson. A série se passa na cidade de Springfield e satiriza a cultura e a sociedade estado-unidense, a televisão e vários aspectos da condição humana.</p><p>A família foi criada por Groening e logo depois foi lançada como uma série de curtas de animação produzidas por James L. Brooks. Groening criou uma família disfuncional e nomeou os personagens como os membros de sua própria família, substituindo o seu próprio nome por Bart.</p>
+        	</div>
+        	<a target="_new" href="http://pt.wikipedia.org/wiki/The_Simpsons">SAIBA MAIS</a>
+        </div>
+    </div>
+    
+<!-- Janela de Prêmios -->
+	<div id="janPremios">
+    	<h1>Prêmios</h1>
+        <img src="common/img/x.png" alt="Fechar Janela de Prêmios" id="xPremios" />
+        <div class="janDentro">
+        	<div class="bordasAzuis">
+            	<div class="imgInternas" style="background:url(common/img/premios.jpg)"></div>
+            </div>
+            <div id="txtPre">
+            
+            	<p id="clickPre1" class="clickPre">Primetime Emmy Awards</p>
+                	<p id="mostraPre1" class="mostraPre">Os Simpsons já ganhou 27 prêmios Primetime Emmy Awards em quatro categorias, mas foi indicado para 64 prêmios em oito categorias diferentes.</p>
+                    
+                <p id="clickPre2" class="clickPre">Annie Awards</p>
+                	<p id="mostraPre2" class="mostraPre">Concedido pela primeira vez em 1972, os Annie Awards é dado exclusivamente a programas de animação. Os Simpsons ganhou 30 Annies, incluindo 12 em linha reta na categoria de Melhor Produção Animada de Televisão.</p>
+                    
+                <p id="clickPre3" class="clickPre">British Comedy Awards</p>
+            		<p id="mostraPre3" class="mostraPre">Os Simpsons já ganhou três prêmios British Comedy. Matt Groening também ganhou um prêmio especial por Notável Contribuição de Comédia em 2004.</p>
+                    
+                <p id="clickPre4" class="clickPre">Golden Reel Awards</p>    
+                    <p id="mostraPre4" class="mostraPre">Os Prémios Golden Reel são apresentadas anualmente por um Movimento de Editores de Imagem e Som. Os Simpsons foi nomeado como a Melhor Edição de Som em Animação de Televisão - na categoria música cinco vezes. Em 1998, o desenho foi nomeado para Melhor Edição de Som em Animações Especiais de Televisão, e ganhou.</p>
+                    
+         		<p id="clickPre5" class="clickPre">Guinness Book</p>    
+                    <p id="mostraPre5" class="mostraPre">Os Simpsons também detém dois recordes mundiais do Guinness Book, o livro dos recordes, com: Primetime mais longa série animada de televisão e maior número de convidados famosos em destaque em uma série de televisão.</p>
+                    
+                <p id="clickPre6" class="clickPre">Environmental Media Awards</p>    
+                    <p id="mostraPre6" class="mostraPre">Os Simpsons já ganhou sete prêmios de mídia ambiental. Todas as vitórias e a maioria de suas nomeações foram na categoria de melhor comédia de televisão episódica, mas a série recebeu uma indicação para o Prêmio Turner em 2005, que é dada ao "roteiro episódio de televisão, no horário nobre que melhor lida com a questão do crescimento da população e responsabilidade ambiental".</p>
+                    
+            </div>
+            <a target="_new" href="http://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_The_Simpsons">SAIBA MAIS</a>
+        </div>
+    </div>
+
+<!-- Janela de Perfil -->
+    <div id="janPerfil">
+    	<h1>Perfil</h1>
+    	<img src="common/img/x.png" alt="Fechar Janela de Perfil" id="xPerfil" />
+        <div class="janDentro">
+        	<div class="bordasAzuis">
+                <div class="foto"></div>
+                <div class="foto2"></div>
+    		</div>
+            <h2 class="nomeInd">Homer Simpsons</h2>
+            <div id="txtInd">
+            	<p>Homer Jay Simpson é um personagem de desenho animado criado por Matt Groening para Os Simpsons, uma série de televisão da FOX. É o pai da família Simpson. Sua primeira aparição na televisão ocorreu em 19 de abril de 1987. Matt Groening o criou enquanto este estava na sala de espera do escritório de James L. Brooks. Ele havia sido chamado para apresentar uma série de curtas baseado em Life in Hell, mas, em vez disso, disso, criou um elenco de novos personagens. Ele nomeou o pai da família com o nome de seu pai, Homer Groening.</p><p>Homer é o pai desajeitado da família Simpson. Com sua esposa, Marge, ele tem três filhos: Bart, Lisa e Maggie. Como o sustentador da família, ele trabalha na Usina Nuclear de Springfield.</p>
+            </div>
+            <a id="linkInd" target="_new" href="http://pt.wikipedia.org/wiki/Homer_Simpson">SAIBA MAIS</a>
+        </div>
+    </div>
+    
+<!-- Janela de Músicas -->    
+	<div id="janMusicas">
+    	<h1>Músicas</h1>
+        <img src="common/img/x.png" alt="Fechar Janela de Músicas" id="xMusicas" />
+        <div class="janDentro">
+        	<div id="music1" class="musics"><img src="common/img/music.png" /><p>01. Do the Bartman</p></div>
+            <div id="music2" class="musics"><img src="common/img/music.png" /><p>02. School Days</p></div>
+            <div id="music3" class="musics"><img src="common/img/music.png" /><p>03. Born Under a Bad</p></div>
+            <div id="music4" class="musics"><img src="common/img/music.png" /><p>04. Moanin' Lisa Blues</p></div>
+            <div id="music5" class="musics"><img src="common/img/music.png" /><p>05. Deep, Deep Trouble</p></div>
+            <div id="music6" class="musics"><img src="common/img/music.png" /><p>06. God Bless the Child</p></div>
+            <div id="music7" class="musics"><img src="common/img/music.png" /><p>07. I Love to See You Smile</p></div>
+            <div id="music8" class="musics"><img src="common/img/music.png" /><p>08. Springfield Soul Stew</p></div>
+            <div id="music9" class="musics"><img src="common/img/music.png" /><p>09. Look at All Those Idiots</p></div>
+            <div id="music10" class="musics"><img src="common/img/music.png" /><p>10. Sibling Rivalry</p></div>                     
+        </div>
+    </div>
+    
+    <div id="player">
+       	<div id="playerArrastar"></div>
+        <img src="common/img/x.png" id="xPlayer" alt="Fechar Player"/>
+       	<div id="playerDentro">
+           	<audio id="audio" autoplay controls="controls" preload="none">
+           		<source src="">
+                Your browser does not support the audio element.
+       		</audio></div>
+    	</div>
+	</div>
+    
+<!-- Janela de Fotos -->     
+	<div id="janFotos">
+    	<h1>Fotos</h1>
+        <img src="common/img/x.png" alt="Fechar Janela de Fotos" id="xFotos" />
+        <div class="janDentro">
+        	<div id="foto1" class="fotos"><img src="common/img/fotos/foto_peq_1.png" /><p>Família Simpsons</p></div>
+            <div id="foto2" class="fotos"><img src="common/img/fotos/foto_peq_2.png" /><p>Bart Simpsons</p></div>
+            <div id="foto3" class="fotos"><img src="common/img/fotos/foto_peq_3.png" /><p>Ronaldo e Homer</p></div>
+            <div id="foto4" class="fotos"><img src="common/img/fotos/foto_peq_4.png" /><p>Natal dos Simpsons</p></div>
+            <div id="foto5" class="fotos"><img src="common/img/fotos/foto_peq_5.png" /><p>Piquenique dos Simpsons</p></div>
+            <div id="foto6" class="fotos"><img src="common/img/fotos/foto_peq_6.png" /><p>Simpsons Beatles</p></div>
+            <div id="foto7" class="fotos"><img src="common/img/fotos/foto_peq_7.png" /><p>Bart, Maggie e Lisa</p></div>
+            <div id="foto8" class="fotos"><img src="common/img/fotos/foto_peq_8.png" /><p>50 Cent e Bart</p></div>
+            <div id="foto9" class="fotos"><img src="common/img/fotos/foto_peq_9.png" /><p>Casal Simpsons</p></div>
+            <div id="foto10" class="fotos"><img src="common/img/fotos/foto_peq_10.png" /><p>Bar do Moe</p></div>
+            <div id="foto11" class="fotos"><img src="common/img/fotos/foto_peq_11.png" /><p>Férias dos Simpsons</p></div>
+            <div id="foto12" class="fotos"><img src="common/img/fotos/foto_peq_12.png" /><p>Homer no Trabalho</p></div>
+            <div id="foto13" class="fotos"><img src="common/img/fotos/foto_peq_13.png" /><p>Homer em casa</p></div>
+            <div id="foto14" class="fotos"><img src="common/img/fotos/foto_peq_14.png" /><p>Homer cortando...</p></div>
+            <div id="foto15" class="fotos"><img src="common/img/fotos/foto_peq_15.png" /><p>Homer de jamaicano</p></div>
+            <div id="foto16" class="fotos"><img src="common/img/fotos/foto_peq_16.png" /><p>Homer e Bart</p></div>
+        </div>
+    </div>
+    
+    <div id="ampliarFotos">
+    	<img src="common/img/x.png" alt="Fechar Ampliação de Fotos" id="xAmpliarFotos"/>
+    	<div id="ampliarFotosDentro">
+        	<img id="fotoAmpliada" src="" style="margin-top:20px;"/>
+            <p id="descricaoFotos"></p>
+            <div id="seta1"></div>
+            <div id="seta2"></div>
+        </div>
+    </div>
+</body>
+</html>
